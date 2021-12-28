@@ -14,7 +14,10 @@
 
 		<p><?php _e( 'When you click the "Start" button, the plugin will start deleting all unused attachments, and any their post meta fields, taxonomy and comments and media files.', 'delete-attachments' ); ?></p>
 		<p><?php _e( 'You can leave this page once the process has started. The plugin will delete attachments in batches using WP-Cron scheduled actions. The results will be output to a log file in the wp-content folder.', 'delete-attachments' ); ?></p>
-		<p><?php _e( 'Please note, you won\'t be able to get attachments or media files back afterwards. If in doubt, back up your site\'s database and wp-content folder first.', 'delete-attachments' ); ?></p>
+		<p>
+			<b><?php _e( 'Please note, you won\'t be able to get attachments or media files back afterwards.', 'delete-attachments' ); ?></b> 
+			<?php _e( 'Back up your site\'s database and wp-content folder first.', 'delete-attachments' ); ?>
+		</p>
 		<p>
 			<?php
 			printf(
