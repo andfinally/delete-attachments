@@ -4,7 +4,7 @@
 Plugin Name: Delete Attachments
 Plugin URI: https://github.com/andfinally/delete-attachments
 Description: Simple WordPress plugin to delete attachments which aren't used in any posts.
-Version: 0.1.0
+Version: 1.0.0
 Author: Andfinally
 Author URI: https://github.com/andfinally/
 License: GPLv2 or later

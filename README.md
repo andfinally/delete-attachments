@@ -30,7 +30,7 @@ Because we're using WP-Cron events, the deletion won't start straight away – p
 
 ## Changelog
 
-### 0.1.0
+### 1.0.0
 
 - Initial release
 
