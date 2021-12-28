@@ -69,7 +69,7 @@ class Delete_Attachments {
 	/**
 	 * Check the user's capabilities and maybe start the deletion
 	 */
-	public function do_admin_actions() {
+	public static function do_admin_actions() {
 		if ( ! current_user_can( 'administrator' ) ) {
 			wp_safe_redirect( admin_url( add_query_arg( 'message', 'delete-attachments-unauthorised' ) ) );
 			exit;
@@ -103,7 +103,7 @@ class Delete_Attachments {
 	 * Show notices at the top of the page when the process has started
 	 * or when there's an error.
 	 */
-	public function add_settings_notices() {
+	public static function add_settings_notices() {
 		if ( ! isset( $_GET['message'] ) ) {
 			return;
 		}
@@ -178,7 +178,7 @@ class Delete_Attachments {
 	 *
 	 * @return bool|void|\WP_Error
 	 */
-	public function schedule_delete_job() {
+	public static function schedule_delete_job() {
 		$attachment_ids = self::get_orphan_attachments();
 		if ( empty( $attachment_ids ) ) {
 			wp_safe_redirect( admin_url( add_query_arg( 'message', 'delete-attachments-none' ) ) );
