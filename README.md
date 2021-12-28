@@ -28,11 +28,19 @@ Because we're using WP-Cron events, the deletion won't start straight away – p
 - Go to `Plugins` and activate the plugin.
 - Go to `Tools > Delete Attachments` to use the plugin.
 
+## Log file
+
+The plugin will output the results of deletion in a log file with a name like `delete-attachments-[YYYY-mm-dd]` in your `wp-content` folder.
+
 ## Changelog
 
 ### 1.0.0
 
 - Initial release
+
+### 1.0.1
+
+- Added note about log file.
 
 ## Screenshots
 
