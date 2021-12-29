@@ -2,12 +2,12 @@
 
 ## Description
 
-This WordPress plugin deletes orphan attachments, their metadata and media files. Orphan attachments are media items which haven't been used in any post.
+If you've been doing a lot of importing into WordPress, you can sometimes end up with orphan attachments – media items which aren't actually used in any post. This plugin deletes orphan attachments, along with their metadata and media files.
 
 See https://neliosoftware.com/blog/how-to-remove-unused-images-from-your-media-library-in-wordpress/
 for more info about the query this plugin uses to detect orphan attachments.
 
-The query assumes you haven't changed the hostname of your site after you created the attachments – i.e., that
+The plugin assumes you haven't changed your site's URL after you created the attachments – i.e., that
 each attachment's `guid` is its URL. Check the posts of type `attachment` in your `wp_posts` table if you're not sure.
 
 ## Warning
@@ -43,6 +43,10 @@ The plugin will output the results of deletion in a log file with a name like `d
 ### 1.0.1
 
 - Added note about log file.
+
+### 1.0.2
+
+- Changed installation instructions.
 
 ## Screenshots
 
