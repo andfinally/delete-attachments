@@ -23,10 +23,12 @@ Because we're using WP-Cron events, the deletion won't start straight away – p
 
 ## Installation
 
-- Download the latest release from [Releases](https://github.com/andfinally/delete-attachments/releases).
-- Unzip the zip file into your `wp-content/plugins` folder, or go to `Plugins > Add New` and upload it there.
-- Go to `Plugins` and activate the plugin.
-- Go to `Tools > Delete Attachments` to use the plugin.
+1. Download the latest version of the plugin [here](https://github.com/andfinally/delete-attachments/archive/main.zip).
+2. Go to **Plugins > Add New > Upload** administration screen on your WordPress site
+3. Select the ZIP file you just downloaded
+4. Click **Install Now**
+5. Click **Activate**
+6. Go to **Tools > Delete Attachments** to use the plugin.
 
 ## Log file
 
